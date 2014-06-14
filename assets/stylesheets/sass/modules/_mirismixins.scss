@@ -69,7 +69,7 @@ Retina images
 	@extend .center-inner on the div w/ centered content 
 
 */
-.center-parent {
+%center-outer {
 	.text-align: center;
 	&:before {
 		content: '';
@@ -78,32 +78,11 @@ Retina images
   		vertical-align: middle;
 	}
 }
-.center-inner {
+%center-inner {
 	display: inline-block;
   	vertical-align: middle;
 }
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-//              SHAPES          //
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	@mixin skew($amount:20deg) {
-		-webkit-transform: skew($amount);
-		-moz-transform: skew($amount);
-		-o-transform: skew($amount);
-		transform: skew($amount);
-	}
-	@mixin rotate($amount:45deg){
-		-webkit-transform: rotate($amount);
-		-moz-transform: rotate($amount);
-		-ms-transform: rotate($amount);
-		-o-transform: rotate($amount);
-		transform: rotate($amount);
-		//-webkit-transform-origin: 0 100%;
-		//-moz-transform-origin: 0 100%;
-		//-ms-transform-origin: 0 100%;
-		//-o-transform-origin: 0 100%;
-		//transform-origin: 0 100%;
-	}
 
 // ~~~~~~~~~~~~~~~~~~~~ //
 // RETINA IMAGES mixin //

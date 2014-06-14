@@ -1,4 +1,6 @@
 mirisboilerplate
 ================
 
-Personal boilerplate for Mixture projects.
+Personal boilerplate.
+
+Sass + HTML5 Reset + Bourbon + Neat + jQuery + Modernizr.
